@@ -29,4 +29,5 @@ for ticker in tickers:
 driver.quit()
 
 with open('data/reports.pickle', 'wb') as f:
-    pickle.dump(reports, f, pk.HIGHEST_PROTOCOL)
+    pk.dump(reports, f, pk.HIGHEST_PROTOCOL)
+
